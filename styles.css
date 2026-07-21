@@ -1,3 +1,96 @@
 body {
     margin: 0;
+    padding: 0;
+    border-left: 5px solid grey;
+    margin-left: 10px;
+    padding-left: 30px;
+    max-width: 450px;
+    border-right: 3px solid orange;
+}
+
+h1 {
+    color: red;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 20px ;
+}
+
+header > h2 {
+    font-size: 12pt;
+    font-weight: 100;
+}
+
+/* This is a flex box */
+.nav {
+display: flex;
+/* border: 1px solid black; */
+justify-content: space-between;
+/* below removes the dots */
+list-style: none;
+padding: 0;
+color: grey;
+}
+
+.nav a {
+    color: grey;
+    opacity: .8;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+article > div {
+    color: grey;
+} 
+
+article > h2 {
+    /* border: 3px solid black; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-width: 100;
+}
+
+article > img {
+    max-width: 450px;
+}
+
+article > p {
+    font-size: 8pt;
+    color: grey;
+}
+
+/* First letter psuedoclass is when the first letter is big */
+.article::first-letter {
+  color: grey;
+  font-size: 40pt;
+  margin-top: -5px;
+  margin-right: 6px;
+  float: left;
+}
+
+.div_continue {
+    color: red;
+    /* border: 1px solid black; */
+    text-align: right;
+    font-size: 8pt;
+    font-weight: bolder;
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav a {
+  color: tomato;
+  text-decoration: none;
+}
+
+.copyright {
+  color: lightgray;
 }
